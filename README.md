@@ -38,7 +38,7 @@ $ npm install babel-plugin-prefix-console-log
 
 ```json
 {
-  "plugins": ["prefix-console-log": {
+  "plugins": ["prefix-console-log", {
     "prefix": "Whatever you want "
   }]
 }
@@ -53,7 +53,7 @@ $ babel --plugins prefix-console-log script.js
 ### Via Node API
 
 ```javascript
-require("babel-core").transform("code", {
+require("@babel/core").transform("code", {
   plugins: ["prefix-console-log"]
 });
 ```
