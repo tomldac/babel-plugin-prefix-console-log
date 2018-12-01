@@ -1,0 +1,30 @@
+{
+  "name": "babel-plugin-prefix-console-log",
+  "version": "1.0.0",
+  "description": "This ia a plugin that will append to the console.log a prefix specified in the settings",
+  "repository": "",
+  "author": "tldacewicz@gmail.com",
+  "main": "src/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "build": "SET NODE_ENV=production && babel ./src --out-dir ./dist",
+    "lint": "eslint ./src",
+    "precommit": "npm run test",
+    "test": "SET NODE_ENV=development && npm run lint && npm run build && mocha --compilers js:@babel/register"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "babel-plugin",
+    "prefix-console"
+  ]
+}
