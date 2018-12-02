@@ -1,12 +1,10 @@
 language: node_js
-
 node_js:
-  - "node"
-  - "lts/*"
-
+- node
+- lts/*
 cache: npm
-
 deploy:
   provider: npm
-  email: "tldacewicz@gmail.com"
-  api_key: "YOUR_AUTH_TOKEN"
+  email: tldacewicz@gmail.com
+  api_key:
+    secure: pKqF3KJ9HGHdbjM7pHJTvFQgSJhfXYyA8vVxBFKBvZU8rZ/YpvvSCf+XqpWF+USZ3HIOP1qy7JZDYSStZ65hQ6/EGraRUCYd98YgVX3fITcFOvmQO6XASVgXTYTKfK2QiMBB38RvVa+bUyLgo7GkA3cD45VXdxQVMHhWklIrxNSR6W0Kk4BE+Dyab9vGo/b8giK8wzOwHULObqI3j26jivgBI/bv4ZRSb59aagB68ac6vlZOfefTgt0Vk/jLShNHDjm69Dj5KE+lDjyVPcWfmGV1w3Q6vZ+74/bzeXh/AcHp6MId7ER1gIn+pSG81JTl3S/woEnA2tte8x3t+iu1lYMtivgTuAaCh3+Y6yd2m6xiciafi2sGg5VKuMj72Xr2NZ8GZSggF1mPl+Q/i13gCMatrClSvKMo/yZy102obD3F+GqlT38mLz06i32DCWz8MEz1+l6UdULAvZkDxY44idFOfoDT8IqxTRYn8RfUyEfC7qKsuppeLYsRGXoJuJ58oAGEgvmCkgGK+42a22Uww0ALB3yYQOorb8Qj+fA9I3nA6Denf8DDJf78hOxKZeNHuMx0JoCMn2BOb4SwRZpakdgQjwEWo4bzNVVpboxpiuTSNIabUXfheE9jkeQXngM/BIOU77xF0JPX92mHAn3LT2Qw4uU2GeHZUsgpwwJ8RHg=
