@@ -1,4 +1,6 @@
-# babel-plugin-prefix-console-log [![Build Status](https://travis-ci.com/tomldac/babel-plugin-prefix-console-log.svg?branch=master)](https://travis-ci.com/tomldac/babel-plugin-prefix-console-log)
+# babel-plugin-prefix-console-log
+Travis-ci.com [![Build Status](https://travis-ci.com/tomldac/babel-plugin-prefix-console-log.svg?branch=master)](https://travis-ci.com/tomldac/babel-plugin-prefix-console-log)
+Travis-ci.org [![Build Status](https://travis-ci.org/tomldac/babel-plugin-prefix-console-log.svg?branch=master)](https://travis-ci.org/tomldac/babel-plugin-prefix-console-log)
 
 This is a library that allows you to append to any amount of arguments in the console log. a Prefix.
 The default prefix is 'Bonify Rocks' where as you can specify in the .babelrc file the option prefix which
