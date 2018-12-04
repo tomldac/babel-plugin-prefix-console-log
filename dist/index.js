@@ -22,7 +22,10 @@ module.exports = function () {
           }
 
           node.arguments.forEach(function (argument) {
-            argument.value = "".concat(prefix).concat(argument.value);
+            //Only append to string Literal not to objects or arrays
+            if (argument.type === 'StringLiteral') {
+              argument.value = "".concat(prefix).concat(argument.value);
+            }
           });
         }
       }

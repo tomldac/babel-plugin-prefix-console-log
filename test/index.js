@@ -2,10 +2,9 @@ import path from 'path';
 import fs from 'fs';
 import assert from 'assert';
 import { transformFileSync } from '@babel/core';
-import plugin from '../src';
 
 function trim(str) {
-    return str.replace(/^\s+|\s+$/, '');
+    return str.replace(/^\s+|\s+$/, '').replace(/(\r\n|\n|\r)/gm,'');;
 }
 
 describe('Add a prefix to the console.log to all arguments', () => {

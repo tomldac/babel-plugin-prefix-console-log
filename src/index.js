@@ -20,7 +20,10 @@ module.exports = () => {
                     }
 
                     node.arguments.forEach(argument => {
-                        argument.value = `${prefix}${argument.value}`;
+                        //Only append to string Literal not to objects or arrays
+                        if (argument.type === 'StringLiteral') {
+                            argument.value = `${prefix}${argument.value}`;
+                        }
                     })
                 }
             }
