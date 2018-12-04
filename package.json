@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-prefix-console-log",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This ia a plugin that will append to the console.log a prefix specified in the settings",
   "repository": "",
   "author": "tldacewicz@gmail.com",
